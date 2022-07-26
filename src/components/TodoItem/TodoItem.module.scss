@@ -1,0 +1,37 @@
+.label {
+  cursor: pointer;
+}
+
+.checkbox {
+  $size: 1.25rem;
+
+  position: absolute;
+  width: $size;
+  height: $size;
+  border: 0.0625rem solid rgb(133, 133, 133);
+  border-radius: 50%;
+}
+
+.input {
+  appearance: none;
+
+  &:checked + .checkbox {
+    background: url('./img/doneIcon.svg') no-repeat;
+    background-position: 60% center;
+    background-size: 65% 65%;
+  }
+
+  &:checked ~ .title {
+    text-decoration: line-through;
+    color: rgb(187, 187, 187);
+  }
+
+  &:focus + .checkbox,
+  &:hover + .checkbox {
+    box-shadow: 1px 1px 3px rgb(121, 121, 121);
+  }
+}
+
+.title {
+  padding-left: 1.7rem;
+}

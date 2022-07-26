@@ -1,0 +1,24 @@
+.root {
+  max-width: 1240px;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  padding: 10px 0;
+}
+
+.input {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}

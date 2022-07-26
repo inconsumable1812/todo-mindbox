@@ -1,0 +1,29 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.buttons {
+  display: flex;
+  column-gap: 5px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  min-height: 20px;
+}
+
+.active {
+  background: blue;
+  border-radius: 5px;
+  color: white;
+}
